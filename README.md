@@ -4,7 +4,24 @@
 This project is a task for Rapsodo. It features a 3D world set in a forest environment. Players can move using basic WASD controls and look around using the mouse. The environment is designed with various objects, including trees, rocks, and grasses, to create an immersive experience.
 
 ## Installation
-This project was developed using **Unity 2021.3.44f1**. To run the project, ensure you have this version or a compatible version of Unity installed.
+
+1. **Clone the Repository:**
+   - Clone the project.
+   - Navigate to the directory where you want to clone the project.
+
+2. **Open the Project in Unity:**
+   - Launch **Unity Hub**.
+   - Click on **Add** to select the cloned project folder.
+   - Make sure to open the project with **Unity 2021.3.44f1** or a compatible version.
+
+3. **Import Required Packages:**
+   - In the Unity editor, go to **Window > Package Manager**.
+   - Ensure the following package is imported:
+     - **Lowpoly Environment - Nature Free - MEDIEVAL FANTASY SERIES**
+
+4. **Setup the Scene:**
+   - Open the main scene and ensure all required assets are in place.
+   - Configure any settings as needed to match your desired gameplay experience.
 
 ## Project Type
 - **Unity Render Pipeline (URP)**: This choice simplifies lighting calculations and positively impacts performance.
