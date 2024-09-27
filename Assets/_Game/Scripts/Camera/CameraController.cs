@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] public Transform player; // The player to follow
-    [SerializeField] public Vector3 offset; // Offset of the camera from the player
-    public float sensitivity = 5f; // How sensitive the camera rotation is
-    public float distance = 5f; // Default distance from the player
-    public float minYAngle = -30f; // Minimum angle for camera rotation
-    public float maxYAngle = 60f; // Maximum angle for camera rotation
-    public LayerMask collisionLayers; // Layers to detect for collisions
+    [Header("Configurations")]
+    [SerializeField] private Vector3 offset; // Offset of the camera from the player
+    [SerializeField] private float sensitivity = 5f; // How sensitive the camera rotation is
+    [SerializeField] private float distance = 5f; // Default distance from the player
+    [SerializeField] private float minYAngle = -30f; // Minimum angle for camera rotation
+    [SerializeField] private float maxYAngle = 60f; // Maximum angle for camera rotation
+    [Header("Assignments")]
+    [SerializeField] private Transform player; // The player to follow
+    [SerializeField] private LayerMask collisionLayers; // Layers to detect for collisions
 
     private float currentX = 0f;
     private float currentY = 0f;
@@ -16,7 +18,7 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         // Initialize camera offset and angles
-        offset = new Vector3(0, 1.5f, -distance); // Adjust offset as needed
+        offset = new Vector3(0, 1.5f, -distance); 
         currentX = transform.eulerAngles.y;
         currentY = transform.eulerAngles.x;
     }

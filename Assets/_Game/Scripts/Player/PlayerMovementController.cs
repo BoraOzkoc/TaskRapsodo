@@ -2,30 +2,40 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
-    public CharacterController controller;  // Reference to the CharacterController component
-    public float speed = 5f;                // Speed of the player movement
-    public float rotationSpeed = 700f;      // Speed of the player's rotation
-    public Transform cameraTransform;       // Reference to the camera's transform
-    public float gravity = -9.81f;          // Gravity force to apply
-    public float groundDistance = 0.4f;     // Distance to check if the player is grounded
-    public LayerMask groundMask;            // Layer to define what is ground
-    public float jumpHeight = 1.5f;         // How high the player can jump
+    [Header("Configurations")] [SerializeField]
+    private float speed = 5f; // Speed of the player movement
 
-    private Vector3 velocity;               // Velocity for gravity calculation
-    private bool isGrounded;                // Flag to check if the player is grounded
-    public Transform groundCheck;           // Position to check for the ground
+    [SerializeField] private float gravity = -9.81f; // Gravity force to apply
+    [SerializeField] private float groundDistance = 0.4f; // Distance to check if the player is grounded
+
+    [Header("Assignments")] [SerializeField]
+    private CharacterController controller; // Reference to the CharacterController component
+
+    [SerializeField] private LayerMask groundMask; // Layer to define what is ground
+    [SerializeField] private Transform groundCheck; // Position to check for the ground
+    [SerializeField] private Transform cameraTransform; // Reference to the camera's transform
+
+    private float rotationSpeed = 700f; // Speed of the player's rotation
+    private Vector3 velocity; // Velocity for gravity calculation
+    private bool isGrounded; // Flag to check if the player is grounded
 
     void Update()
     {
+        CheckGround();
+
+        MovePlayer();
+
+        ApplyGravity();
+    }
+
+    private void CheckGround()
+    {
         // Ground detection
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+    }
 
-        // If the player is grounded and not falling, reset vertical velocity
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f;  // Small negative value to keep the player grounded
-        }
-
+    private void MovePlayer()
+    {
         // Get input for movement
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -49,9 +59,15 @@ public class PlayerMovementController : MonoBehaviour
             // Move the player according to the camera's forward direction
             controller.Move(moveDirection.normalized * speed * Time.deltaTime);
         }
+    }
 
-        // Apply gravity
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+    private void ApplyGravity()
+    {
+        // Add downward force to the player's velocity if the player is not grounded
+        if (!isGrounded)
+        {
+            velocity.y += gravity * Time.deltaTime;
+            controller.Move(velocity);
+        }
     }
 }
