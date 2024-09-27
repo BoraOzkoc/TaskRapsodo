@@ -1342,15 +1342,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e11ce5502a9c84075bb68a810d84f7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 96318472}
-  offset: {x: 0, y: 0, z: 0}
   sensitivity: 5
-  distance: 5
   minYAngle: -10
   maxYAngle: 60
-  collisionLayers:
-    serializedVersion: 2
-    m_Bits: 8256
+  player: {fileID: 96318472}
 --- !u!81 &1694898976
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1644,13 +1639,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1165401035046561639, guid: a01079350cad34085addfd8df136a79b, type: 3}
+      propertyPath: gravity
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165401035046561639, guid: a01079350cad34085addfd8df136a79b, type: 3}
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 2059476949}
     - target: {fileID: 1165401035046561639, guid: a01079350cad34085addfd8df136a79b, type: 3}
+      propertyPath: rotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165401035046561639, guid: a01079350cad34085addfd8df136a79b, type: 3}
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 1694898978}
+    - target: {fileID: 1165401035046561639, guid: a01079350cad34085addfd8df136a79b, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4252328219905075060, guid: a01079350cad34085addfd8df136a79b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1665,7 +1672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769038601480671596, guid: a01079350cad34085addfd8df136a79b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.53
+      value: 8.085
       objectReference: {fileID: 0}
     - target: {fileID: 4769038601480671596, guid: a01079350cad34085addfd8df136a79b, type: 3}
       propertyPath: m_LocalPosition.z
