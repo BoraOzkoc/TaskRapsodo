@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 5312774376309547423}
   - component: {fileID: 7222032405249620201}
   - component: {fileID: 8666900168458449862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Pine_Tree_03_green_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5312774376309547423
 Transform:
@@ -95,12 +95,12 @@ GameObject:
   - component: {fileID: 1632311839970058957}
   - component: {fileID: 2665008077595975129}
   - component: {fileID: 2538005266717328119}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Pine_Tree_03_green_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1632311839970058957
 Transform:
@@ -179,12 +179,12 @@ GameObject:
   - component: {fileID: 2508017711220551757}
   - component: {fileID: 2186195950354688938}
   - component: {fileID: 1617293089112588261}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Pine_Tree_03_green_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2508017711220551757
 Transform:
@@ -263,12 +263,12 @@ GameObject:
   - component: {fileID: 5793648545945888915}
   - component: {fileID: 1617457292327210846}
   - component: {fileID: 1058101661015893919}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Pine_Tree_03_green (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5793648545945888915
 Transform:

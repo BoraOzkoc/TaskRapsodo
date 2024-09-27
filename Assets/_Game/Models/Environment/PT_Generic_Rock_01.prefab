@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 7923693280976587760}
   - component: {fileID: 5356631888360428776}
   - component: {fileID: 4253415942256687640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Generic_Rock_01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7923693280976587760
 Transform:
@@ -94,12 +94,12 @@ GameObject:
   - component: {fileID: 8434010964709920180}
   - component: {fileID: 6273530188076676075}
   - component: {fileID: 9198958415385241733}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Generic_Rock_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8434010964709920180
 Transform:
@@ -170,12 +170,12 @@ GameObject:
   - component: {fileID: 7717184190859372198}
   - component: {fileID: 6493564031707399347}
   - component: {fileID: 3461347226326906759}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Generic_Rock_01_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7717184190859372198
 Transform:
@@ -253,12 +253,12 @@ GameObject:
   - component: {fileID: 641633015870378858}
   - component: {fileID: 2402371992982656318}
   - component: {fileID: 6379797754871453369}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PT_Generic_Rock_01_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &641633015870378858
 Transform:
