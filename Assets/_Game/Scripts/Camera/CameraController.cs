@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform player; // The player to follow
-    public Vector3 offset; // Offset of the camera from the player
+    [SerializeField] public Transform player; // The player to follow
+    [SerializeField] public Vector3 offset; // Offset of the camera from the player
     public float sensitivity = 5f; // How sensitive the camera rotation is
     public float distance = 5f; // Default distance from the player
     public float minYAngle = -30f; // Minimum angle for camera rotation
@@ -40,7 +40,6 @@ public class CameraController : MonoBehaviour
         {
             // Move camera closer if hitting an obstacle
             transform.position = hit.point;
-            Debug.Log("layer : "+ hit.collider.gameObject.layer);
         }
         else
         {
@@ -49,6 +48,6 @@ public class CameraController : MonoBehaviour
         }
 
         // Always look at the player
-        transform.LookAt(player.position + Vector3.up * 1.5f); // Adjust height if necessary
+        transform.LookAt(player.position + Vector3.up * 1.5f);
     }
 }
