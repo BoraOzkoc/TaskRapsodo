@@ -79,10 +79,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  rotationSpeed: 700
-  gravity: -9.81
+  gravity: -1
   groundDistance: 0.4
-  jumpHeight: 1.5
   controller: {fileID: 2377072486801609047}
   groundMask:
     serializedVersion: 2
