@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
 
         // Set camera's position to the player's head (or desired location)
-        transform.position = player.position + Vector3.up * 1.5f; // Adjust height as needed
+        transform.position = player.position + Vector3.up * 1.5f;
 
         // Apply the rotation to the camera
         transform.rotation = rotation;

@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
-    [Header("Configurations")] [SerializeField]
-    private float speed = 5f; // Speed of the player movement
-
+    [Header("Configurations")]
+    [SerializeField] private float speed = 5f; // Speed of the player movement
     [SerializeField] private float gravity = -9.81f; // Gravity force to apply
     [SerializeField] private float groundDistance = 0.4f; // Distance to check if the player is grounded
 
-    [Header("Assignments")] [SerializeField]
-    private CharacterController controller; // Reference to the CharacterController component
-
+    [Header("Assignments")] 
+    [SerializeField] private CharacterController controller; // Reference to the CharacterController component
     [SerializeField] private LayerMask groundMask; // Layer to define what is ground
     [SerializeField] private Transform groundCheck; // Position to check for the ground
     [SerializeField] private Transform cameraTransform; // Reference to the camera's transform
